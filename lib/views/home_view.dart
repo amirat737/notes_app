@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:notes/widgets/app_bar_widget.dart';
+import 'package:notes/widgets/search_widget.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -14,7 +14,7 @@ class HomeView extends StatelessWidget {
             SizedBox(
               height: 50,
             ),
-            AppBarWidget(),
+            SearchWidget(),
           ],
         ),
       ),
