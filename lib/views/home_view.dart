@@ -7,16 +7,24 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24),
+        padding: const EdgeInsets.symmetric(horizontal: 24),
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
-            SearchWidget(),
-            NoteWidget(),
+            const SearchWidget(),
+            // NoteWidget()
+            Expanded(
+              child: ListView.builder(
+                padding: const EdgeInsets.only(top: 0),
+                itemBuilder: ((context, index) {
+                  return const NoteWidget();
+                }),
+              ),
+            )
           ],
         ),
       ),

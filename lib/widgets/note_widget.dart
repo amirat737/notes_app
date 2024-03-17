@@ -7,16 +7,21 @@ class NoteWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: const EdgeInsets.only(top: 16),
       padding: const EdgeInsets.all(16),
       decoration: const BoxDecoration(
-          color: Color(0xff242424),
-          borderRadius: BorderRadius.all(Radius.circular(20))),
+        color: Color(0xff242424),
+        borderRadius: BorderRadius.all(Radius.circular(20)),
+      ),
       child: const Column(
-        crossAxisAlignment:CrossAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           ListTile(
-            contentPadding:EdgeInsets.all(0),
-            title: Text('Study',style: TextStyle(fontSize: 20),),
+            contentPadding: EdgeInsets.all(0),
+            title: Text(
+              'Study',
+              style: TextStyle(fontSize: 20),
+            ),
             subtitle: Padding(
               padding: EdgeInsets.symmetric(vertical: 12),
               child: Text(
@@ -27,14 +32,14 @@ class NoteWidget extends StatelessWidget {
                 ),
               ),
             ),
-            trailing: Icon(FontAwesomeIcons.trash,color: Color(0xffffffff),),
+            trailing: Icon(
+              FontAwesomeIcons.trash,
+              color: Color(0xffffffff),
+            ),
           ),
           Text(
             'May 21, 2024',
-            style: TextStyle(
-              color: Color(0xff888888),
-              fontSize: 15
-            ),
+            style: TextStyle(color: Color(0xff888888), fontSize: 15),
           ),
         ],
       ),
