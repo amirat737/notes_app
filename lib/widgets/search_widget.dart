@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes/constants.dart';
 
 class SearchWidget extends StatelessWidget {
   const SearchWidget({super.key});
@@ -10,7 +11,7 @@ class SearchWidget extends StatelessWidget {
       height: screenWidth / 7,
       child: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-        color: const Color(0xff242424),
+        color: grey24,
         child: Padding(
           padding: const EdgeInsets.only(left: 10),
           child: TextField(
@@ -20,12 +21,12 @@ class SearchWidget extends StatelessWidget {
             decoration: InputDecoration(
               contentPadding: const EdgeInsets.only(top: 9),
               hintStyle: const TextStyle(
-                color: Color(0xff888888),
+                color: grey8,
               ),
               hintText: 'Search notes',
               prefixIcon: Icon(
                 Icons.search,
-                color: const Color(0xff888888),
+                color: grey8,
                 size: screenWidth / 15,
               ),
               border: InputBorder.none,

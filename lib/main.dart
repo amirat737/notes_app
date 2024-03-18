@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes/constants.dart';
 import 'package:notes/views/home_view.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class NotesApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
-        scaffoldBackgroundColor: const Color(0xff000000),
+        scaffoldBackgroundColor: black,
         textTheme: const TextTheme(
           bodyMedium: TextStyle(
             fontFamily: 'Gilroy-Regular',
